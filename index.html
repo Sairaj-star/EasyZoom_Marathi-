@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155eef">
+  <meta name="description" content="EasyZoom तुम्हाला Zoom इन्स्टॉल करण्यासाठी आणि सोप्या पद्धतीने मीटिंगमध्ये सहभागी होण्यासाठी मदत करते.">
+  <title>EasyZoom | मीटिंगमध्ये सहभागी होणे आता सोपे</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">मुख्य मजकुराकडे जा</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EasyZoom मुख्यपृष्ठ" id="homeLink">
+      <span class="brand-mark" aria-hidden="true">E</span>
+      <span>Easy<span>Zoom</span></span>
+    </a>
+    <button class="text-size" id="textSizeBtn" type="button" aria-pressed="false">अ+ मोठा मजकूर</button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="homeView">
+      <div class="hero-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img"><rect x="5" y="14" width="39" height="36" rx="8" fill="currentColor"/><path d="M44 25l14-9c2-1 4 0 4 3v26c0 3-2 4-4 3l-14-9z" fill="currentColor"/><circle cx="24" cy="32" r="7" fill="#fff" opacity=".95"/></svg>
+      </div>
+      <p class="eyebrow">व्हिडिओ मीटिंग आता सोपी</p>
+      <h1>चला, तुमच्या<br>मीटिंगमध्ये सहभागी होऊया.</h1>
+      <p class="hero-copy">तुम्हाला काय करायचे आहे ते निवडा. आम्ही तुम्हाला प्रत्येक पायरीवर मार्गदर्शन करू.</p>
+      <div class="main-actions">
+        <button class="action-card install-card" id="installBtn" type="button">
+          <span class="action-icon" aria-hidden="true">↓</span>
+          <span><strong>Zoom इन्स्टॉल करा</strong><small>तुमच्या डिव्हाइससाठी Zoom मिळवा</small></span>
+          <span class="chevron" aria-hidden="true">›</span>
+        </button>
+        <button class="action-card join-card" id="joinBtn" type="button">
+          <span class="action-icon" aria-hidden="true">↗</span>
+          <span><strong>माझ्या मीटिंगमध्ये सहभागी व्हा</strong><small>माझ्याकडे मीटिंगची लिंक किंवा ID आहे</small></span>
+          <span class="chevron" aria-hidden="true">›</span>
+        </button>
+        <button class="action-card help-card" id="helpBtn" type="button">
+          <span class="action-icon" aria-hidden="true">?</span>
+          <span><strong>मला मदत हवी आहे</strong><small>मला काय करायचे ते दाखवा</small></span>
+          <span class="chevron" aria-hidden="true">›</span>
+        </button>
+      </div>
+      <p class="privacy-note"><span aria-hidden="true">🔒</span> तुमच्या मीटिंगची माहिती याच डिव्हाइसवर राहते. EasyZoom ती जतन करत नाही.</p>
+    </section>
+
+    <section class="panel hidden" id="installView" aria-labelledby="installTitle">
+      <button class="back-btn" data-back type="button">← मागे जा</button>
+      <div class="section-symbol" aria-hidden="true">↓</div>
+      <p class="eyebrow">पहिली पायरी</p>
+      <h1 id="installTitle">तुमच्या डिव्हाइसवर Zoom मिळवा</h1>
+      <p class="section-intro">तुमचे डिव्हाइस ओळखण्याचा प्रयत्न केला आहे. Zoom च्या अधिकृत डाउनलोड पेजवर जाण्यासाठी खालील बटण दाबा.</p>
+      <div class="device-note" id="deviceNote" role="status"></div>
+      <a class="primary-btn full" id="downloadLink" href="https://zoom.us/download" target="_blank" rel="noopener noreferrer">Zoom चे अधिकृत डाउनलोड पेज उघडा ↗</a>
+      <div class="notice"><strong>यानंतर काय करायचे?</strong><p>तुमच्या अ‍ॅप स्टोअर किंवा संगणकावर दिसणाऱ्या सूचना पाळा. डाउनलोड किंवा इन्स्टॉलेशनसाठी तुमच्या डिव्हाइसवर पुष्टी करावी लागू शकते. EasyZoom स्वतःहून अ‍ॅप इन्स्टॉल करू शकत नाही.</p></div>
+      <div class="link-row">
+        <a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings" target="_blank" rel="noopener noreferrer">Android · Google Play</a>
+        <a href="https://apps.apple.com/app/zoom-workplace/id546505307" target="_blank" rel="noopener noreferrer">iPhone · App Store</a>
+        <a href="https://zoom.us/download" target="_blank" rel="noopener noreferrer">Windows / Mac</a>
+      </div>
+      <button class="secondary-btn full" id="installDoneBtn" type="button">Zoom आहे. आता मीटिंगमध्ये सहभागी होण्यास मदत करा</button>
+    </section>
+
+    <section class="panel hidden" id="joinView" aria-labelledby="joinTitle">
+      <button class="back-btn" data-back type="button">← मागे जा</button>
+      <p class="eyebrow">मीटिंगमध्ये सहभागी व्हा</p>
+      <h1 id="joinTitle">तुम्हाला कोणत्या पद्धतीने सहभागी व्हायचे आहे?</h1>
+      <p class="section-intro">तुमच्याकडे असलेल्या माहितीप्रमाणे पर्याय निवडा.</p>
+      <div class="tab-switch" role="tablist" aria-label="मीटिंगच्या माहितीचा प्रकार">
+        <button class="tab active" id="linkTab" role="tab" aria-selected="true" aria-controls="linkForm" type="button">माझ्याकडे लिंक आहे</button>
+        <button class="tab" id="idTab" role="tab" aria-selected="false" aria-controls="idForm" type="button">माझ्याकडे मीटिंग ID आहे</button>
+      </div>
+      <form id="linkForm" class="meeting-form">
+        <label for="meetingLink">Zoom मीटिंगची पूर्ण लिंक इथे पेस्ट करा</label>
+        <p class="field-help">ही लिंक तुम्हाला WhatsApp, SMS किंवा ईमेलद्वारे मिळाली असू शकते.</p>
+        <input id="meetingLink" name="meetingLink" type="url" inputmode="url" placeholder="https://zoom.us/j/..." autocomplete="url">
+        <p class="inline-error" id="linkError" role="alert"></p>
+        <button class="primary-btn full" type="submit">माझी मीटिंग उघडा ↗</button>
+      </form>
+      <form id="idForm" class="meeting-form hidden">
+        <label for="meetingId">मीटिंग ID</label>
+        <p class="field-help">तुमच्या आमंत्रणातील अंक टाका. मधील मोकळ्या जागा किंवा हायफन चालतील.</p>
+        <input id="meetingId" name="meetingId" type="text" inputmode="numeric" autocomplete="off" placeholder="उदाहरण: 123 4567 8901">
+        <label for="passcode">पासकोड <span class="optional">(दिलेला असल्यास)</span></label>
+        <input id="passcode" name="passcode" type="text" autocomplete="off" placeholder="मीटिंगचा पासकोड टाका">
+        <p class="inline-error" id="idError" role="alert"></p>
+        <button class="primary-btn full" type="submit">Zoom वर पुढे जा ↗</button>
+        <p class="small-note">तुमची ID आणि पासकोड या पेजवर लिंक तयार करण्यासाठीच वापरले जातात. EasyZoom त्यांना पाठवत किंवा जतन करत नाही.</p>
+      </form>
+      <div class="notice"><strong>ब्राउझरमधून सहभागी होता येत नाही?</strong><p>Zoom अ‍ॅप उघडण्यास किंवा इन्स्टॉल करण्यास सांगू शकते. ब्राउझरमधून सहभागी होता येईल की नाही हे होस्टच्या सेटिंग्ज आणि तुमच्या डिव्हाइसवरील Zoom च्या सुविधांवर अवलंबून असते.</p></div>
+    </section>
+
+    <section class="panel hidden" id="helpView" aria-labelledby="helpTitle">
+      <button class="back-btn" data-back type="button">← मागे जा</button>
+      <p class="eyebrow">आम्ही मदतीसाठी आहोत</p>
+      <h1 id="helpTitle">चला, आपण एकत्र करूया.</h1>
+      <p class="section-intro">तुमची अडचण कोणती आहे ते निवडा.</p>
+      <details class="help-item">
+        <summary>मला WhatsApp वर मीटिंगची लिंक मिळाली आहे</summary>
+        <ol><li>WhatsApp उघडा आणि तो संदेश शोधा.</li><li>मीटिंग लिंकवर बोट दाबून ठेवा आणि <strong>कॉपी</strong> निवडा.</li><li>EasyZoom वर परत या आणि <strong>माझ्या मीटिंगमध्ये सहभागी व्हा</strong> दाबा.</li><li><strong>माझ्याकडे लिंक आहे</strong> निवडा, लिंक पेस्ट करा आणि <strong>माझी मीटिंग उघडा</strong> दाबा.</li></ol>
+      </details>
+      <details class="help-item">
+        <summary>माझ्याकडे मीटिंग ID आणि पासकोड आहे</summary>
+        <ol><li><strong>माझ्या मीटिंगमध्ये सहभागी व्हा</strong> दाबा.</li><li><strong>माझ्याकडे मीटिंग ID आहे</strong> निवडा.</li><li>आमंत्रणातील मीटिंग ID आणि पासकोड टाका.</li><li><strong>Zoom वर पुढे जा</strong> दाबा आणि स्क्रीनवरील सूचना पाळा.</li></ol>
+      </details>
+      <details class="help-item">
+        <summary>मला Zoom इन्स्टॉल करायचे आहे</summary>
+        <ol><li><strong>Zoom इन्स्टॉल करा</strong> दाबा.</li><li>अधिकृत डाउनलोड बटण दाबा.</li><li>तुमच्या डिव्हाइस किंवा अ‍ॅप स्टोअरवरील सूचना पाळा. इन्स्टॉलेशनची पुष्टी करावी लागू शकते.</li><li>मीटिंगमध्ये सहभागी होण्यासाठी तयार झाल्यावर EasyZoom वर परत या.</li></ol>
+      </details>
+      <details class="help-item">
+        <summary>Zoom अ‍ॅप उघडायला किंवा साइन इन करायला सांगते</summary>
+        <p>Zoom वर दिसणाऱ्या सूचना पाळा. काही मीटिंगसाठी अ‍ॅप, साइन इन, पासकोड किंवा कॅमेरा व मायक्रोफोन वापरण्याची परवानगी आवश्यक असते. EasyZoom या अटी टाळू शकत नाही.</p>
+      </details>
+      <button class="primary-btn full" id="helpJoinBtn" type="button">मीटिंगमध्ये सहभागी होण्यासाठी मदत करा</button>
+    </section>
+
+    <section class="panel hidden" id="errorView" aria-labelledby="errorTitle">
+      <button class="back-btn" data-back type="button">← मागे जा</button>
+      <div class="section-symbol warning" aria-hidden="true">!</div>
+      <h1 id="errorTitle">चला, लिंक तपासूया</h1>
+      <p class="section-intro" id="errorText">कृपया लिंक तपासा आणि पुन्हा प्रयत्न करा.</p>
+      <button class="primary-btn full" id="errorRetryBtn" type="button">पुन्हा प्रयत्न करा</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>EasyZoom ही स्वतंत्र मदत करणारी वेबसाइट आहे. तिचा Zoom Communications, Inc. शी संबंध नाही.</p>
+    <p>Zoom हे Zoom Communications, Inc. चे ट्रेडमार्क आहे.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
